@@ -1,0 +1,100 @@
+/*Variable*/
+$content_color: #fff;
+
+/*Partials*/
+@import "_header.css";
+@import "_footer.css";
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/*Rounded cards with mixin*/
+@mixin corners($radius) {
+  border-radius: $radius;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: $content_color;
+  width: 50%;
+  height: 500px;
+  padding: 10px;
+
+  @include corners(20px);
+
+  h1 {
+    font-weight: normal;
+  }
+/*Added darken to hover*/
+  h2:hover {
+    color: darken($content_color, 25%);
+  }
+
+  p {
+    font-style: italic;
+  }
+
+  img {
+      width: 50%;
+      padding: 10px;
+  }
+  /*Added hover to image*/
+  img:hover {
+     transform:scale(1.25);
+  }
+
+}
+
+
+
+#red {
+  background-color: #ec7471;
+}
+
+#green {
+  background-color: #93dc88;
+}
+
+#blue {
+  background-color: #85cdf4;
+}
+
+#purple {
+  background-color: #c097cc;
+}
+
+#teal {
+  background-color: #2bcbc5;
+}
+
+#salmon {
+  background-color: #f3bfb9;
+}
+
+#yellow {
+  background-color: #e3d578;
+}
+
+#navy {
+  background-color: #7191e4;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+}

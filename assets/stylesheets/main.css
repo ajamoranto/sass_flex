@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2px; }
+
+.header {
+  background-color: #fff; }
+  .header h1 {
+    color: #ec7471; }
+  .header p {
+    font-style: italic;
+    color: gray; }
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  width: 50%;
+  height: 500px;
+  padding: 10px;
+  border-radius: 20px; }
+  .card h1 {
+    font-weight: normal; }
+  .card h2:hover {
+    color: #bfbfbf; }
+  .card p {
+    font-style: italic; }
+  .card img {
+    width: 50%;
+    padding: 10px; }
+  .card img:hover {
+    transform: scale(1.25); }
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #3f3e3e;
+  color: #fff;
+  width: 100%;
+  height: 50px; }
+
+#red {
+  background-color: #ec7471; }
+
+#green {
+  background-color: #93dc88; }
+
+#blue {
+  background-color: #85cdf4; }
+
+#purple {
+  background-color: #c097cc; }
+
+#teal {
+  background-color: #2bcbc5; }
+
+#salmon {
+  background-color: #f3bfb9; }
+
+#yellow {
+  background-color: #e3d578; }
+
+#navy {
+  background-color: #7191e4; }
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
