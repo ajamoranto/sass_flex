@@ -1,17 +1,11 @@
+/*Variable*/
+/*Partials*/
+@import url(_header.css);
+@import url(_footer.css);
 * {
   box-sizing: border-box;
   font-family: sans-serif;
-  padding: 0;
-  margin: 0;
   letter-spacing: 2px; }
-
-.header {
-  background-color: #fff; }
-  .header h1 {
-    color: #ec7471; }
-  .header p {
-    font-style: italic;
-    color: gray; }
 
 .content {
   display: flex;
@@ -19,6 +13,7 @@
   flex-wrap: wrap;
   width: 100%; }
 
+/*Rounded cards with mixin*/
 .card {
   display: flex;
   flex-direction: column;
@@ -29,7 +24,9 @@
   width: 50%;
   height: 500px;
   padding: 10px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  /*Added darken to hover*/
+  /*Added hover to image*/ }
   .card h1 {
     font-weight: normal; }
   .card h2:hover {
@@ -41,14 +38,6 @@
     padding: 10px; }
   .card img:hover {
     transform: scale(1.25); }
-
-.footer {
-  display: flex;
-  align-items: center;
-  background-color: #3f3e3e;
-  color: #fff;
-  width: 100%;
-  height: 50px; }
 
 #red {
   background-color: #ec7471; }
@@ -77,5 +66,3 @@
 @media screen and (max-width: 1000px) {
   .card {
     width: 100%; } }
-
-/*# sourceMappingURL=main.css.map */
