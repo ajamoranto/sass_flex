@@ -7,6 +7,21 @@
   font-family: sans-serif;
   letter-spacing: 2px; }
 
+.header h1 {
+  color: #ec7471; }
+
+.header p {
+  font-style: italic;
+  color: gray; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #3f3e3e;
+  color: #fff;
+  width: 100%;
+  height: 50px; }
+
 .content {
   display: flex;
   flex-direction: row;

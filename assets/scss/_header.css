@@ -1,11 +1,13 @@
 /*Used variable for background color*/
 .header {
-  background-color: $content_color;
-  h1 {
-    color: #ec7471;
-  }
-  p {
-    font-style: italic;
-    color: gray;
-  }
+  background-color: #fff;
+}
+
+.header h1 {
+  color: #ec7471;
+}
+
+.header p {
+  font-style: italic;
+  color: gray;
 }
