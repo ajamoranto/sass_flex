@@ -20,6 +20,7 @@
     "gulp": "^3.9.1",
     "gulp-htmlhint": "^0.3.1",
     "gulp-sass": "^3.1.0",
+    "gulp-w3c-css": "^1.0.1",
     "gulp-watch": "^4.3.11"
   }
 }
